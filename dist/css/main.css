@@ -1,0 +1,104 @@
+.container {
+  max-width: 1580px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden; }
+
+.btn-main, .btn-light, .btn-dark {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer; }
+
+.btn-main {
+  color: #333;
+  background-color: #ed302d; }
+
+.btn-light {
+  color: #333;
+  background-color: #f4f4f4; }
+
+.btn-dark {
+  columns: #f4f4f4;
+  background-color: #333; }
+
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
+  background-color: #ed302d; }
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem; }
+
+.text-center {
+  text-align: center; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  background: #fff; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+ul {
+  list-style: none; }
+
+h1 {
+  font-family: "Mountains of Christmas", serif; }
+
+h2,
+h3,
+h4 {
+  margin-bottom: 0.55rem; }
+
+img {
+  width: 100%; }
+
+#logo {
+  width: 65px;
+  height: 65px;
+  padding: 10px;
+  color: #fff;
+  text-transform: uppercase; }
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem; }
+  #main-nav ul {
+    display: flex; }
+  #main-nav li {
+    padding: 1rem 1.5rem; }
+    #main-nav li:hover {
+      background-color: #ed302d;
+      transition: all 0.5s; }
+  #main-nav a {
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s; }
+    #main-nav a.current {
+      border-color: #ed302d; }
+
+#header-home {
+  background: url("../img/autumn-leaves-HERO.jpg") no-repeat center center/cover;
+  background-color: red;
+  height: 100vh;
+  color: #fff; }
+  #header-home .header-content {
+    text-align: center;
+    padding-top: 20%; }
+  #header-home h1 {
+    font-size: 7rem;
+    line-height: 1.2;
+    text-shadow: 5px 5px 8px #333; }

@@ -1,0 +1,113 @@
+@import "config";
+@import "utilities";
+
+// General Styles
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-color;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-family: "Mountains of Christmas", serif;
+}
+
+h2,
+h3,
+h4 {
+  margin-bottom: 0.55rem;
+}
+
+img {
+  width: 100%;
+}
+
+//Logo
+#logo {
+  width: 65px;
+  height: 65px;
+  padding: 10px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+//Main Nav
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  //position: sticky;
+  //top: 0;
+  //z-index: 2;
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    padding: 1rem 1.5rem;
+
+    &:hover {
+      background-color: $main-color;
+      transition: all 0.5s;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s;
+
+    &:hover {
+      //border-color: $main-color;
+    }
+
+    &.current {
+      border-color: $main-color;
+    }
+  }
+}
+
+// Header
+
+#header {
+  &-home {
+    background: $bg-image no-repeat center center / cover;
+    background-color: red;
+    height: 100vh;
+    color: #fff;
+    //Header content
+    .header-content {
+      text-align: center;
+      padding-top: 20%;
+    }
+
+    h1 {
+      font-size: 7rem;
+      line-height: 1.2;
+      text-shadow: 5px 5px 8px #333;
+    }
+  }
+  //Header Inner
+  &-inner {
+  }
+}
