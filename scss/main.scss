@@ -53,9 +53,11 @@ img {
   display: flex;
   justify-content: space-between;
   padding: 0 1rem;
-  //position: sticky;
-  //top: 0;
-  //z-index: 2;
+  border: 1px solid red;
+  background-color: rgba(3, 3, 3, 0.5);
+  /*position: sticky;
+  top: 0;
+  z-index: 2; */
 
   ul {
     display: flex;
@@ -77,9 +79,9 @@ img {
     padding-bottom: 0.5rem;
     transition: border-color 0.5s;
 
-    &:hover {
+    /* &:hover {
       //border-color: $main-color;
-    }
+    } */
 
     &.current {
       border-color: $main-color;
@@ -108,6 +110,6 @@ img {
     }
   }
   //Header Inner
-  &-inner {
-  }
+  /* &-inner {
+  } */
 }
