@@ -11,6 +11,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  font-weight: 100;
   line-height: 1.6;
   background: #fff;
 }
@@ -30,8 +31,12 @@ h1 {
 
 h2,
 h3,
-h4 {
+h4,
+p {
   margin-bottom: 0.55rem;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 
 img {
