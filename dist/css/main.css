@@ -155,7 +155,7 @@ h2 {
   color: #333;
   font-family: "Mountains of Christmas", serif;
   font-weight: 300;
-  font-size: 2.5rem; }
+  font-size: 2.2rem; }
 
 h3,
 h4,
@@ -180,7 +180,7 @@ img {
   justify-content: space-between;
   padding: 0 1rem;
   border: 1px solid red;
-  background-color: rgba(3, 3, 3, 0.5);
+  background-color: rgba(3, 3, 3, 0.65);
   position: sticky;
   top: 0;
   z-index: 2; }
@@ -250,3 +250,81 @@ img {
     font-size: 2rem;
     text-shadow: 5px 5px 8px #333;
     background: url("../img/autumn-leaves-HERO.jpg") no-repeat center center/cover; }
+
+.two-column-A-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+
+.column-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 3rem;
+  height: 100%; }
+
+.three_column_section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+
+.image-removed {
+  padding: 3rem; }
+
+.three-column-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 3rem;
+  height: 100%; }
+
+.case img:hover {
+  opacity: 0.7; }
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #484848;
+  color: #fff;
+  padding: 2rem; }
+
+.social a {
+  padding-left: 10px; }
+
+.directions-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 2rem;
+  padding: 4rem; }
+
+.directions h2,
+.contact h2 {
+  border-bottom: 2px solid coral;
+  text-align: center; }
+
+.directions-text {
+  width: 700px;
+  padding-top: 3rem;
+  margin: 0 auto; }
+  .directions-text p {
+    text-align: left;
+    padding-bottom: 2rem; }
+    .directions-text p div {
+      padding-left: 50px; }
+
+.google-map {
+  text-align: center;
+  padding-top: 2rem; }
+
+.contact {
+  text-align: center; }
+  .contact .SFF {
+    font-weight: bold;
+    padding: 20px; }
+  .contact .btn-dark {
+    font-weight: bold;
+    margin: 0 auto;
+    width: 13rem;
+    padding: 2rem; }
+  .contact img {
+    width: 13rem; }
