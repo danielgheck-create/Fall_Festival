@@ -30,7 +30,15 @@ h1 {
   font-family: "Mountains of Christmas", serif;
 }
 
-h2,
+h2 {
+  margin-bottom: 0.55rem;
+  color: #333;
+  font-family: "Mountains of Christmas", serif; //"Roboto", sans-serif;
+
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
 h3,
 h4,
 p {
@@ -60,10 +68,10 @@ img {
   justify-content: space-between;
   padding: 0 1rem;
   border: 1px solid red;
-  background-color: rgba(3, 3, 3, 0.5);
-  /*position: sticky;
+  background-color: rgba(3, 3, 3, 0.65);
+  position: sticky;
   top: 0;
-  z-index: 2; */
+  z-index: 2;
 
   ul {
     display: flex;
@@ -85,9 +93,43 @@ img {
     padding-bottom: 0.5rem;
     transition: border-color 0.5s;
 
-    /* &:hover {
-      //border-color: $main-color;
-    } */
+    &.current {
+      border-color: $main-color;
+    }
+  }
+}
+
+// Try & .inner (with a space)
+
+#main-nav-inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  border: 1px solid red;
+  background-color: $dark-bg;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    padding: 1rem 1.5rem;
+
+    &:hover {
+      background-color: $main-color;
+      transition: all 0.5s;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s;
 
     &.current {
       border-color: $main-color;
@@ -116,6 +158,19 @@ img {
     }
   }
   //Header Inner
-  /* &-inner {
-  } */
+  &-inner {
+    position: relative;
+    //Header content
+    .header-content-inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 30vh;
+      color: #fff;
+      font-size: 2rem;
+      text-shadow: 5px 5px 8px #333;
+      background: $bg-image no-repeat center center / cover;
+    }
+  }
 }

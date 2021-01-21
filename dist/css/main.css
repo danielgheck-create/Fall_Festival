@@ -74,12 +74,13 @@
   height: 100%; }
 
 .btn-main, .btn-light, .btn-dark {
-  display: inline-block;
+  display: block;
   padding: 0.8rem 2rem;
   transition: all 0.5s;
   border: none;
   cursor: pointer;
-  border-radius: 5px; }
+  border-radius: 5px;
+  width: 11rem; }
 
 .btn-main {
   color: #333;
@@ -105,6 +106,29 @@ input[class^="btn-"]:hover {
 .text-center {
   text-align: center; }
 
+/* PHOTO GRID Header */
+.section-header {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+
+.section-padding {
+  padding: 20px 20px 40px; }
+
+/* Flex Grid */
+.flex-grid .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px; }
+
+.flex-grid .column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px; }
+
 * {
   margin: 0;
   padding: 0;
@@ -126,7 +150,13 @@ ul {
 h1 {
   font-family: "Mountains of Christmas", serif; }
 
-h2,
+h2 {
+  margin-bottom: 0.55rem;
+  color: #333;
+  font-family: "Mountains of Christmas", serif;
+  font-weight: 300;
+  font-size: 2.5rem; }
+
 h3,
 h4,
 p {
@@ -151,9 +181,9 @@ img {
   padding: 0 1rem;
   border: 1px solid red;
   background-color: rgba(3, 3, 3, 0.5);
-  /*position: sticky;
+  position: sticky;
   top: 0;
-  z-index: 2; */ }
+  z-index: 2; }
   #main-nav ul {
     display: flex; }
   #main-nav li {
@@ -166,25 +196,57 @@ img {
     color: #fff;
     border-bottom: 3px transparent solid;
     padding-bottom: 0.5rem;
-    transition: border-color 0.5s;
-    /* &:hover {
-      //border-color: $main-color;
-    } */ }
+    transition: border-color 0.5s; }
     #main-nav a.current {
       border-color: #ed302d; }
 
-#header {
-  /* &-inner {
-  } */ }
-  #header-home {
-    background: url("../img/autumn-leaves-HERO.jpg") no-repeat center center/cover;
-    background-color: red;
-    height: 100vh;
-    color: #fff; }
-    #header-home .header-content {
-      text-align: center;
-      padding-top: 20%; }
-    #header-home h1 {
-      font-size: 7rem;
-      line-height: 1.2;
-      text-shadow: 5px 5px 8px #333; }
+#main-nav-inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  border: 1px solid red;
+  background-color: #484848;
+  position: sticky;
+  top: 0;
+  z-index: 2; }
+  #main-nav-inner ul {
+    display: flex; }
+  #main-nav-inner li {
+    padding: 1rem 1.5rem; }
+    #main-nav-inner li:hover {
+      background-color: #ed302d;
+      transition: all 0.5s; }
+  #main-nav-inner a {
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s; }
+    #main-nav-inner a.current {
+      border-color: #ed302d; }
+
+#header-home {
+  background: url("../img/autumn-leaves-HERO.jpg") no-repeat center center/cover;
+  background-color: red;
+  height: 100vh;
+  color: #fff; }
+  #header-home .header-content {
+    text-align: center;
+    padding-top: 20%; }
+  #header-home h1 {
+    font-size: 7rem;
+    line-height: 1.2;
+    text-shadow: 5px 5px 8px #333; }
+
+#header-inner {
+  position: relative; }
+  #header-inner .header-content-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 30vh;
+    color: #fff;
+    font-size: 2rem;
+    text-shadow: 5px 5px 8px #333;
+    background: url("../img/autumn-leaves-HERO.jpg") no-repeat center center/cover; }
