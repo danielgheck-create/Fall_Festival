@@ -1,0 +1,60 @@
+@import "config";
+@import "utilities";
+
+/* Navigation */
+
+/*#main-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 1rem;
+  border: 1px solid red;
+  background-color: rgba(3, 3, 3, 0.65);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  li {
+    padding: 1rem 1.5rem;
+
+    &:hover {
+      background-color: $main-color;
+      transition: all 0.5s;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s;
+
+    &.current {
+      border-color: $main-color;
+    }
+  }
+} */
+
+// CONTACT CONTENT COLUMNS
+
+/*.directions,
+.contact {
+  h2 {
+    display: none;
+  }
+}*/
+
+/*.directions-grid {
+  grid-template-columns: 1fr;
+  grid-gap: 1.2rem;
+}
+
+.contact img {
+  display: none;
+}*/

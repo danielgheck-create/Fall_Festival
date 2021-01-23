@@ -291,11 +291,18 @@ img {
 .social a {
   padding-left: 10px; }
 
+/* .directions {
+  grid-area: directions-area;
+}
+
+.contact {
+  grid-area: contact-area;
+} */
 .directions-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-gap: 2rem;
-  padding: 4rem; }
+  padding: 6rem; }
 
 .directions h2,
 .contact h2 {
@@ -303,14 +310,11 @@ img {
   text-align: center; }
 
 .directions-text {
-  width: 700px;
-  padding-top: 3rem;
+  padding: 3rem 4rem 4rem 4rem;
   margin: 0 auto; }
   .directions-text p {
     text-align: left;
     padding-bottom: 2rem; }
-    .directions-text p div {
-      padding-left: 50px; }
 
 .google-map {
   text-align: center;
@@ -325,6 +329,7 @@ img {
     font-weight: bold;
     margin: 0 auto;
     width: 13rem;
-    padding: 2rem; }
+    padding: 2rem;
+    border-radius: 50%; }
   .contact img {
     width: 13rem; }

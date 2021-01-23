@@ -175,7 +175,7 @@ img {
   }
 }
 
-//New styles (main-test.scss)
+//New styles
 
 .two-column-A-container {
   display: grid;
@@ -229,11 +229,20 @@ img {
 
 // CONTACT AND DIRECTIONS PAGE styles
 
+/* .directions {
+  grid-area: directions-area;
+}
+
+.contact {
+  grid-area: contact-area;
+} */
+
 .directions-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  //grid-template-areas: "directions-area directions-area contact-area";
   grid-gap: 2rem;
-  padding: 4rem;
+  padding: 6rem;
 }
 
 .directions,
@@ -245,16 +254,12 @@ img {
 }
 
 .directions-text {
-  width: 700px;
-  padding-top: 3rem;
+  padding: 3rem 4rem 4rem 4rem;
   margin: 0 auto;
   p {
     text-align: left;
     padding-bottom: 2rem;
     //border: 1px solid red;
-    div {
-      padding-left: 50px;
-    }
   }
 }
 
@@ -276,6 +281,7 @@ img {
     margin: 0 auto;
     width: 13rem;
     padding: 2rem;
+    border-radius: 50%;
   }
 
   img {

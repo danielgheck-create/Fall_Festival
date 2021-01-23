@@ -1,0 +1,181 @@
+.container {
+  max-width: 1500px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+  display: flex; }
+
+.background-color-home {
+  background-color: #f4f4f4; }
+
+/* Flex items */
+.flex-items {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 100%; }
+
+/*.flex-columns {
+  &.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  &.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+  /*
+  &img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &.column-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px;
+  }
+  
+}*/
+.flex-columns .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%; }
+
+.flex-columns .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1; }
+
+.flex-columnsimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.flex-columns .column-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 30px; }
+
+.flex-columns .column .column-1 {
+  height: 100%; }
+
+.flex-columns .column .column-2 {
+  height: 100%; }
+
+.btn-main, .btn-light, .btn-dark {
+  display: block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 11rem; }
+
+.btn-main {
+  color: #333;
+  background-color: #ed302d; }
+
+.btn-light {
+  color: #333;
+  background-color: #f4f4f4; }
+
+.btn-dark {
+  color: #f4f4f4;
+  background-color: coral; }
+
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
+  background-color: #ed302d; }
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem; }
+
+.text-center {
+  text-align: center; }
+
+/* PHOTO GRID Header */
+.section-header {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+
+.section-padding {
+  padding: 20px 20px 40px; }
+
+/* Flex Grid */
+.flex-grid .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px; }
+
+.flex-grid .column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px; }
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; }
+  #main-nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+
+#header-home .header-content h1 {
+  font-size: 5rem; }
+
+.image-removed {
+  display: none; }
+
+.three_column_section {
+  grid-template-columns: 1fr; }
+
+.two-column-A-container {
+  grid-template-columns: 1fr; }
+
+/* .social a {
+
+}
+
+<div class="social">
+      <a href="https://www.facebook.com/SalisburyFallFestival"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+*/
+#main-nav-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; }
+  #main-nav-inner ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+
+#header-inner .header-content-inner h1 {
+  font-size: 2.75rem; }
+
+.directions-grid {
+  grid-template-columns: 1fr;
+  grid-gap: 1.2rem; }
+
+.contact img {
+  display: none; }
+
+#logo {
+  display: none; }

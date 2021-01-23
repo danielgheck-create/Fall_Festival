@@ -1,0 +1,74 @@
+@import "config";
+@import "utilities";
+
+// HOME PAGE
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+#header-home .header-content h1 {
+  font-size: 5rem;
+}
+
+.image-removed {
+  display: none;
+}
+
+.three_column_section {
+  grid-template-columns: 1fr;
+}
+
+.two-column-A-container {
+  grid-template-columns: 1fr;
+}
+
+// Footer both
+
+/* .social a {
+
+}
+
+<div class="social">
+      <a href="https://www.facebook.com/SalisburyFallFestival"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+*/
+
+// INNER PAGES
+
+#main-nav-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+#header-inner .header-content-inner h1 {
+  font-size: 2.75rem;
+}
+
+.directions-grid {
+  grid-template-columns: 1fr;
+  grid-gap: 1.2rem;
+}
+
+.contact img {
+  display: none;
+}
+
+#logo {
+  display: none;
+}
