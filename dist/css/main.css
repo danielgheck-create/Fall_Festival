@@ -153,9 +153,9 @@ h1 {
 h2 {
   margin-bottom: 0.55rem;
   color: #333;
-  font-family: "Mountains of Christmas", serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 2.2rem; }
+  font-size: 2rem; }
 
 h3,
 h4,
@@ -226,8 +226,8 @@ img {
       border-color: #ed302d; }
 
 #header-home {
-  background: url("../img/autumn-leaves-HERO.jpg") no-repeat center center/cover;
-  background-color: red;
+  background: url("../img/autumn-leaves-HERO-sm.jpg") no-repeat center center/cover;
+  background-color: coral;
   height: 100vh;
   color: #fff; }
   #header-home .header-content {
@@ -249,7 +249,7 @@ img {
     color: #fff;
     font-size: 2rem;
     text-shadow: 5px 5px 8px #333;
-    background: url("../img/autumn-leaves-HERO.jpg") no-repeat center center/cover; }
+    background: url("../img/autumn-leaves-HERO-sm.jpg") no-repeat center center/cover; }
 
 .two-column-A-container {
   display: grid;

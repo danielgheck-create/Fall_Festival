@@ -33,10 +33,10 @@ h1 {
 h2 {
   margin-bottom: 0.55rem;
   color: #333;
-  font-family: "Mountains of Christmas", serif; //"Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 
   font-weight: 300;
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 h3,
@@ -142,7 +142,7 @@ img {
 #header {
   &-home {
     background: $bg-image no-repeat center center / cover;
-    background-color: red;
+    background-color: $dark-color;
     height: 100vh;
     color: #fff;
     //Header content
