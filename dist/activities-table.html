@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Gloria+Hallelujah&family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width: 880px)" href="css/ipad.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="css/mobile.css">
+  
+    <title>Salisbury Fall Festival | Activities</title>
+    <style>
+      .activity-page {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.activities-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1.5rem;
+  grid-gap: 20px;
+  padding: 10px;
+  /* border:1px solid coral; */
+}
+
+.activities-container > div {
+  padding: 20px 0;
+  font-size: 1rem;
+}
+
+.activities-central-column {
+  max-width: 750px;
+}
+
+.act-item1 {
+  grid-column: 1 / 5;
+  font-weight: bold;
+  text-align: center;
+
+  em {
+    font-size: 0.85rem;
+  }
+}
+
+.act-item2 {
+  grid-column: 5 / 6;
+}
+
+.act-item3 {
+  grid-column: 1 / 2;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.act-item4 {
+  grid-column: 2 / 3;
+  text-align: center;
+  font-weight: bold;
+}
+
+.act-item5 {
+  grid-column: 3 / 6;
+  text-align: left;
+}
+
+/* .act-item6 {
+  grid-column: 2 / 3;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 0px;
+}
+
+.act-item7 {
+  grid-column: 3 / 6;
+  text-align: left;
+  padding-top: 0px;
+} */
+
+h1.activities {
+  text-align: center;
+  font-size: 3rem;
+}
+
+h2.activities {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+
+h3.activities {
+  text-align: center;
+  font-size: 1.8rem;
+  padding-top: 2rem;
+}
+
+ul.activities {
+  text-align: center;
+}
+
+.item1 { 
+  grid-area: header;
+  color:blue; 
+}
+.item2 { 
+  grid-area: time;
+  color:coral; 
+}
+.item3 { 
+  grid-area: description;
+  color: purple; 
+}
+.item4 { 
+  grid-area: blank; 
+}
+.item5 { 
+  grid-area: time2;
+  color:coral; 
+}
+.item6 { 
+  grid-area: description2;
+  color: purple; 
+}
+.item7 { 
+  grid-area: blank2; 
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'blank time time description description description'
+    'blank2 time2 time2 description2 description2 description2';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+          }
+          th, td {
+            padding: 15px;
+            text-align: left;
+            width:30%;    
+          }
+
+    </style>
+  </head>
+<body>
+  <!-- Header -->
+  <header id="header-inner">
+    <nav id="main-nav-inner">
+      <div class="container" >
+          <img src="img/leaves-square-icon.png" alt="" id="logo">
+          <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="activites.html" class="current" >Activites</a></li>
+            <li><a href="special-events.html" >Special Events</a></li>
+            <li><a href="participating-groups.html" >Participating Groups</a></li>
+            <li><a href="directions-contact.html"  >Directions + Contact</a></li>
+          </ul>
+      </div> <!-- container -->
+    </nav>
+    <div class="header-content-inner">
+          <h1>Activities</h1>
+    </div>
+  </header>
+  <div class="activity-page">
+      <div class="act-sidebar-left">
+        <h1 class="activities">SIDBAR HERE</h1>
+      </div>
+      <div class="activities-central-column">
+        <!-- <div class="grid-container">
+          <div class="item1">Header</div>
+          <div class="item2">Time</div>
+          <div class="item3">Description</div>  
+          <div class="item4">&nbsp;</div>
+        </div>
+        <div class="grid-container">
+          <div class="item1">Header</div>
+          <div class="item2">Time</div>
+          <div class="item3">Description</div>  
+          <div class="item4">&nbsp;</div>
+          <div class="item5">Time</div>
+          <div class="item6">Description</div>  
+          <div class="item7">&nbsp;</div>
+        </div> -->
+          <table style="width:100%">
+            <tr>
+              <th colspan="2">19th Annual Scarecrow Contest</th>
+              <th >&nbsp;</th>
+            </tr>
+            <tr>
+              <td style="text-align: right;">9 am – 6 pm</td>
+              <td colspan="2">See the many scarecrows lining Main Street in both Salisbury and Lakeville.  Then vote for your favorite in each of FOUR cate-gories:  Individual/Family, Business/Non-Profit, School, and Kids (12 and under). Ballots available at the Salisbury General Store & Pharmacy and at On the Run in Lakeville.  To enter the contest, click HERE for the entry form.</td>
+
+            </tr>
+          </table>
+        
+        </div>
+      <div class="act-sidebar-right">
+        <h1 class="activities">SIDBAR HERE</h1>
+      </div>
+</div>
+
+<!-- NOTES  SCHEDULE VARIANTS
+  A: One Title
+      one time/one programs
+
+  B: One Title
+      two times/two programs
+
+  C: One Title 
+    four times/four programs
+    Plus paragraph
+
+  D: One Title 
+    five times/five programs
+
+    OLD Grid Schedule
+    <div class="activities-container">
+            <div class="act-item1">21th Annual Scarecrow Contest</div>
+            <div class="act-item2">&nbsp;</div>
+            <div class="act-item3">&nbsp;</div>  
+            <div class="act-item4">9 am – 6 pm</div>
+            <div class="act-item5">See the many scarecrows lining Main Street in both Salisbury and Lakeville.  Then vote for your favorite in each of FOUR cate-gories:  Individual/Family, Business/Non-Profit, School, and Kids (12 and under). Ballots available at the Salisbury General Store & Pharmacy and at On the Run in Lakeville.  To enter the contest, click HERE for the entry form</div>
+          </div>
+          <div class="activities-container">
+            <div class="act-item1">Friends of Scoville Library</div>
+            <div class="act-item2">&nbsp;</div>
+            <div class="act-item3">&nbsp;</div>  
+            <div class="act-item4">9 am – 10 am<br>10 am – 4 pm</div>
+            <div class="act-item5">Giant Book Sale – Early bird buying $10 per person <br>Free admission to Giant Book Sale in the Wardell Room</div>
+          </div>
+          <div class="activities-container">
+            <div class="act-item1">Lakeville Interiors <em>– 7 Holley Street, Lakeville</em></div>
+            <div class="act-item2">&nbsp;</div>
+            <div class="act-item3">&nbsp;</div>  
+            <div class="act-item4">10 am – 4 pm</div>
+            <div class="act-item5">Stop in for our 30% off showroom sale. </div>
+          </div>
+
+          /* .act-item1 {
+  grid-column: 1 / 5;
+  font-weight: bold;
+  text-align: center;
+
+  em {
+    font-size: 0.85rem;
+  }
+}
+
+.act-item2 {
+  grid-column: 5 / 6;
+}
+
+.act-item3 {
+  grid-column: 1 / 2;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.act-item4 {
+  grid-column: 2 / 3;
+  text-align: center;
+  font-weight: bold;
+}
+
+.act-item5 {
+  grid-column: 3 / 6;
+  text-align: left;
+}
+
+/* .act-item6 {
+  grid-column: 2 / 3;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 0px;
+}
+
+.act-item7 {
+  grid-column: 3 / 6;
+  text-align: left;
+  padding-top: 0px;
+} */
+
+
+  </body> 

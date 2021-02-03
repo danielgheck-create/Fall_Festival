@@ -287,3 +287,83 @@ img {
     width: 13rem;
   }
 }
+
+/* ACTIVITIES PAGE */
+
+.activities-central-column {
+  max-width: 750px;
+}
+
+.activity-page {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.activities-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1.5rem;
+  grid-gap: 20px;
+  padding: 10px;
+  /* border:1px solid coral; */
+}
+
+.activities-container > div {
+  padding: 20px 0;
+  font-size: 1rem;
+}
+
+h1.activities {
+  text-align: center;
+  font-size: 3rem;
+}
+
+h2.activities {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+
+h3.activities {
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: bold;
+  em {
+    font-size: 0.9rem;
+  }
+}
+
+table.schedule,
+th,
+td {
+  /* border: 1px solid black; */
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 5px;
+  text-align: left;
+  width: 30%;
+}
+
+table {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.time {
+  font-weight: bold;
+  text-align: center;
+  vertical-align: top;
+}
+
+ul.activities {
+  text-align: center;
+}
+
+.print-icon {
+  background-color: coral;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+}
