@@ -388,7 +388,7 @@ table {
 
 .time {
   font-weight: bold;
-  text-align: center;
+  text-align: right;
   vertical-align: top; }
 
 ul.activities {
