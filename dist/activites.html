@@ -14,7 +14,7 @@
   
     <title>Salisbury Fall Festival | Activities</title>
   </head>
-<body>
+<body onload="hideMenu()">
   <!-- Header -->
   <header id="header-inner">
     <nav id="main-nav-inner">
@@ -43,10 +43,13 @@
   </div> 
   https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
   -->
-  <div id="navbar">
-    <a href="#home">Home</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
+  <div id="nav-wrapper" >
+    <div id="navbar" >
+      <h2 class="activities">Schedule Page Links</h2>
+      <a href="#friday">Friday, October 11</a>
+      <a href="#saturday">Saturday, October 12</a>
+      <a href="#sunday">Sunday, October 13</a>
+    </div>
   </div>
   <div class="activity-page">
       <div class="act-sidebar-right">
@@ -481,17 +484,27 @@ window.onscroll = function() {myFunction()};
 
 // Get the navbar
 var navbar = document.getElementById("navbar");
+var nav_wrapper = document.getElementById("nav-wrapper");
 
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
+//var sticky = 300;
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
   if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
+    navbar.classList.add("sticky");
+    //alert("window.pageYOffset = " + window.pageYOffset);
+    nav_wrapper.style.display = "block";
   } else {
     navbar.classList.remove("sticky");
+    nav_wrapper.style.display = "none";
+    //nav_wrapper.classList.remove("show");
   }
+}
+
+function hideMenu() {
+  nav_wrapper.style.display = "none";
 }
 </script>
 
