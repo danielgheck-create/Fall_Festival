@@ -14,7 +14,7 @@
   
     <title>Salisbury Fall Festival | Activities</title>
   </head>
-<body>
+<body onload="hideMenu()">
   <!-- Header -->
   <header id="header-inner">
     <nav id="main-nav-inner">
@@ -25,7 +25,7 @@
             <li><a href="activites.html" class="current" >Activites</a></li>
             <li><a href="special-events.html" >Special Events</a></li>
             <li><a href="participating-groups.html" >Participating Groups</a></li>
-            <li><a href="directions-contact.html"  >Directions + Contact</a></li>
+            <li><a href="contact.html"  >Directions + Contact</a></li>
           </ul>
       </div> <!-- container -->
     </nav>
@@ -40,12 +40,22 @@
       <li><h3><a href=#saturday >Saturday, October 12</a></h3></li>
       <li><h3><a href=#sunday >Sunday, October 13</a></h3></li>
     </ul>
-  </div> -->
+  </div> 
+  https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
+  -->
+  <div id="nav-wrapper" >
+    <div id="navbar" >
+      <h2 class="activities">Schedule Page Links</h2>
+      <a href="#friday">Friday, October 11</a>
+      <a href="#saturday">Saturday, October 12</a>
+      <a href="#sunday">Sunday, October 13</a>
+    </div>
+  </div>
   <div class="activity-page">
       <div class="act-sidebar-right">
         <h2 class="activities">Schedule Page Links</h2>
         <ul class="activities">
-          <li><h3>Friday, October 11</h3></li>
+          <li><h3><a href=#friday >Friday, October 11</a></h3></li>
           <li><h3><a href=#saturday >Saturday, October 12</a></h3></li>
           <li><h3><a href=#sunday >Sunday, October 13</a></h3></li>
         </ul>
@@ -53,7 +63,7 @@
       <div class="activities-central-column">
         <h2 class="activities" >Something for All Ages</h2>
         <hr>
-        <h1 class="activities">Friday October 11<sup>th</sup></h1>
+        <h1 class="activities" id='friday'>Friday October 11<sup>th</sup></h1>
         <hr>
           <table >
             <tr>
@@ -474,17 +484,27 @@ window.onscroll = function() {myFunction()};
 
 // Get the navbar
 var navbar = document.getElementById("navbar");
+var nav_wrapper = document.getElementById("nav-wrapper");
 
 // Get the offset position of the navbar
-var sticky = navbar.offsetTop;
+//var sticky = navbar.offsetTop;
+var sticky = 300;
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
   if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
+    navbar.classList.add("sticky");
+    //alert("window.pageYOffset = " + window.pageYOffset);
+    nav_wrapper.style.display = "block";
   } else {
     navbar.classList.remove("sticky");
+    nav_wrapper.style.display = "none";
+    //nav_wrapper.classList.remove("show");
   }
+}
+
+function hideMenu() {
+  nav_wrapper.style.display = "none";
 }
 </script>
 
