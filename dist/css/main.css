@@ -407,6 +407,9 @@ ul.activities {
   padding: 10px;
   border-radius: 50%; }
 
+#nav-wrapper {
+  display: none; }
+
 /* Style the navbar */
 #navbar {
   overflow: hidden;
@@ -415,7 +418,9 @@ ul.activities {
   display: flex;
   flex-direction: column;
   text-align: center;
-  color: #333; }
+  color: #333;
+  border: 1px solid red;
+  margin-left: 35px; }
 
 /* Navbar links */
 #navbar a {
@@ -434,6 +439,9 @@ ul.activities {
   position: fixed;
   top: 0;
   width: 300px; }
+
+.show {
+  visibility: visible !important; }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
