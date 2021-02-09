@@ -424,3 +424,69 @@ ul.activities {
 .sticky + .content {
   padding-top: 60px;
 }
+
+// SPONSORS PAGE
+
+.top-message {
+  text-align: center;
+  margin-top: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.sponsors-top-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  //grid-template-areas: "directions-area directions-area contact-area";
+  grid-gap: 2rem;
+  padding: 6rem;
+  text-align: center;
+}
+
+.red-maple,
+.white-oak,
+.blue-spruce {
+  h2 {
+    border-bottom: 2px solid coral;
+    text-align: center;
+  }
+  ul li {
+    font-weight: 300;
+    font-size: 1.3rem;
+  }
+  img {
+    text-align: center;
+    width: 60%;
+    //border: 2px solid coral;
+  }
+}
+
+.long-form-sponsor-header {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.sponsors-two-columns-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  //grid-template-areas: "directions-area directions-area contact-area";
+  grid-gap: 2rem;
+  padding: 6rem;
+  text-align: center;
+}
+
+.sponsors-two-columns-grid {
+  img {
+    width: 250px;
+    box-shadow: 8px 8px 8px rgb(156, 156, 156);
+    margin-bottom: 20px;
+  }
+}
+
+section.sponsors-left-column,
+section.sponsors-right-column {
+  text-align: center;
+  article {
+    font-weight: 300;
+    margin-top: 3rem;
+  }
+}

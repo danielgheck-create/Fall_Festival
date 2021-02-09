@@ -446,3 +446,57 @@ ul.activities {
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
   padding-top: 60px; }
+
+.top-message {
+  text-align: center;
+  margin-top: 2rem;
+  font-family: "Roboto", sans-serif; }
+
+.sponsors-top-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  padding: 6rem;
+  text-align: center; }
+
+.red-maple h2,
+.white-oak h2,
+.blue-spruce h2 {
+  border-bottom: 2px solid coral;
+  text-align: center; }
+
+.red-maple ul li,
+.white-oak ul li,
+.blue-spruce ul li {
+  font-weight: 300;
+  font-size: 1.3rem; }
+
+.red-maple img,
+.white-oak img,
+.blue-spruce img {
+  text-align: center;
+  width: 60%; }
+
+.long-form-sponsor-header {
+  text-align: center;
+  margin-top: 3rem; }
+
+.sponsors-two-columns-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  padding: 6rem;
+  text-align: center; }
+
+.sponsors-two-columns-grid img {
+  width: 250px;
+  box-shadow: 8px 8px 8px #9c9c9c;
+  margin-bottom: 20px; }
+
+section.sponsors-left-column,
+section.sponsors-right-column {
+  text-align: center; }
+  section.sponsors-left-column article,
+  section.sponsors-right-column article {
+    font-weight: 300;
+    margin-top: 3rem; }
