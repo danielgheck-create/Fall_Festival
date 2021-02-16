@@ -179,3 +179,17 @@ input[class^="btn-"]:hover {
 
 #logo {
   display: none; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "title" "time" "description";
+  text-align: center; }
+
+.main-container {
+  display: grid;
+  grid-template-areas: "left-menu" "central-column" "right-print";
+  margin: auto;
+  width: 90%; }
+
+.two-column-A-container .image_wapper img {
+  display: none; }

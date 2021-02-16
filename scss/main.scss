@@ -290,28 +290,10 @@ img {
 
 /* ACTIVITIES PAGE */
 
-.activities-central-column {
-  max-width: 750px;
-}
-
 .activity-page {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
 }
-
-/* .activities-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1.5rem;
-  grid-gap: 20px;
-  padding: 10px;
-  /* border:1px solid coral; 
-}
-
-.activities-container > div {
-  padding: 20px 0;
-  font-size: 1rem;
-}*/
 
 h1.activities {
   text-align: center;
@@ -331,30 +313,6 @@ h3.activities {
   em {
     font-size: 0.9rem;
   }
-}
-
-/* table.schedule,
-th,
-td {
-  border: 1px solid black;
-  border-collapse: collapse;
-} */
-th,
-td {
-  padding: 5px;
-  text-align: left;
-  width: 20%;
-  font-weight: 200;
-}
-
-table {
-  margin-top: 40px;
-  margin-bottom: 20px;
-}
-
-table p {
-  margin-top: 15px;
-  font-weight: 200;
 }
 
 .time {
@@ -423,6 +381,71 @@ ul.activities {
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
   padding-top: 60px;
+}
+
+.title-item {
+  grid-area: title;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.title-item em {
+  font-size: 1rem;
+}
+
+.time-item {
+  grid-area: time;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.description-item {
+  grid-area: description;
+  font-size: 1.2rem;
+}
+
+.grid-container {
+  grid-area: central-column;
+  display: grid;
+  grid-template-areas:
+    "title title title"
+    "time description description";
+  ul li {
+    list-style: square;
+  }
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 1rem 1rem;
+  //border: 1px solid red;
+  color: #333;
+}
+
+.main-container {
+  display: grid;
+  /* grid-template-columns: 1fr 2fr 1fr; */
+  grid-template-areas: "left-menu central-column central-column right-print";
+  margin: auto;
+  width: 85%;
+}
+
+.central-container {
+  max-width: 700px;
+  margin: auto 0;
+}
+
+.act-left-menu {
+  grid-area: left-menu;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-right: 3rem;
+}
+
+.act-right-print {
+  grid-area: right-print;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-left: 3rem;
 }
 
 // SPONSORS PAGE
