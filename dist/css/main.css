@@ -517,3 +517,10 @@ section.sponsors-right-column {
   section.sponsors-right-column article {
     font-weight: 300;
     margin-top: 3rem; }
+
+.sponsor-top-link {
+  font-weight: bold;
+  font-size: 1rem; }
+
+.column-text a {
+  font-weight: bold; }

@@ -193,3 +193,13 @@ input[class^="btn-"]:hover {
 
 .two-column-A-container .image_wapper img {
   display: none; }
+
+.sponsors-two-columns-grid {
+  grid-template-columns: 1fr; }
+
+.sponsors-top-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  padding: 6rem;
+  text-align: center; }
