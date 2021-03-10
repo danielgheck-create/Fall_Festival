@@ -517,7 +517,9 @@ section.sponsors-right-column {
   section.sponsors-left-column article,
   section.sponsors-right-column article {
     font-weight: 300;
-    margin-top: 3rem; }
+    margin-top: 3rem;
+    font-weight: 500;
+    font-size: 1rem; }
 
 .sponsor-top-link {
   font-weight: bold;
