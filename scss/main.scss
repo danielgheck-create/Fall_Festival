@@ -405,11 +405,12 @@ ul.activities {
 }
 
 .grid-container {
-  grid-area: central-column;
+  /* grid-area: central-column;
   display: grid;
   grid-template-areas:
     "title title title"
-    "time description description";
+    "time time time"
+    "description description";*/
   ul li {
     list-style: square;
   }

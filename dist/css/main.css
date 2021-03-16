@@ -429,9 +429,12 @@ ul.activities {
   font-size: 1.2rem; }
 
 .grid-container {
-  grid-area: central-column;
+  /* grid-area: central-column;
   display: grid;
-  grid-template-areas: "title title title" "time description description"; }
+  grid-template-areas:
+    "title title title"
+    "time time time"
+    "description description";*/ }
   .grid-container ul li {
     list-style: square; }
 
@@ -527,3 +530,6 @@ section.sponsors-right-column {
 
 .column-text a {
   font-weight: bold; }
+
+.grid-styles {
+  margin-top: 2rem; }
