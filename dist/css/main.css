@@ -336,13 +336,16 @@ img {
     width: 13rem; }
 
 /* ACTIVITIES PAGE */
-.activity-page {
+/*.activity-page {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr; }
-
+  grid-template-columns: 1fr 2fr 1fr;
+}*/
 h1.activities {
   text-align: center;
   font-size: 3rem; }
+
+.header-content-inner h1 {
+  font-size: 4rem; }
 
 h2.activities {
   text-align: center;
@@ -426,18 +429,22 @@ ul.activities {
 
 .description-item {
   grid-area: description;
+  color: #333;
+  font-family: Helvetica, sans-serif;
+  font-weight: 500 !important;
   font-size: 1.2rem; }
 
-.grid-container {
+/*.grid-container {
   /* grid-area: central-column;
   display: grid;
   grid-template-areas:
     "title title title"
     "time time time"
-    "description description";*/ }
-  .grid-container ul li {
-    list-style: square; }
-
+    "description description";
+  ul li {
+    list-style: square;
+  }
+}*/
 .grid-container > div {
   text-align: center;
   padding: 1rem 1rem;
@@ -455,13 +462,11 @@ ul.activities {
   margin: auto 0; }
 
 .act-left-menu {
-  grid-area: left-menu;
   font-weight: bold;
   font-size: 1.2rem;
   margin-right: 3rem; }
 
 .act-right-print {
-  grid-area: right-print;
   font-weight: bold;
   font-size: 1.2rem;
   margin-left: 3rem; }
