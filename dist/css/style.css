@@ -45,7 +45,8 @@ p {
   .navbar h3 {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-weight: 100;
-    font-size: 1.3rem; }
+    font-size: 1.3rem;
+    color: #fff; }
 
 #showcase {
   background: url("../img/autumn-leaves-HERO-sm.jpg") no-repeat center center/cover;
@@ -100,6 +101,7 @@ p {
       text-shadow: 0.35rem 0.35rem 8px #000;
       color: #fff;
       font-size: 4rem; } }
+
 @media screen and (max-width: 768px) {
   #showcase {
     background: url("../img/autumn-leaves-HERO-mobile.jpg");
@@ -113,7 +115,6 @@ p {
       text-shadow: 0.35rem 0.35rem 8px #000;
       color: #fff;
       font-size: 3rem; }
-
   .vertical-center {
     min-height: 100%;
     /* Fallback for browsers do NOT support vh unit */
