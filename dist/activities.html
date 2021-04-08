@@ -12,6 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Gloria+Hallelujah&family=Kaushan+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" media="screen and (max-width: 992px)" href="css/ipad.css">
     <link rel="stylesheet" media="screen and (max-width: 600px)" href="css/mobile.css">
+    <!-- New CSS sheets-->
+        <link rel="stylesheet" href="css/bootstrap.css" >
+        <link rel="stylesheet" href="css/style.css">
+    <!-- End new sheets-->
   
     <title>Salisbury Fall Festival | Activities</title>
     
@@ -19,20 +23,33 @@
 <body onload="hideMenu()">
   <!-- Header -->
   <header id="header-inner" >
-    <nav id="main-nav-inner" >
-      <div class="container justify-content-center">
-          <img src="img/leaves-square-icon.png" alt="" id="logo">
-          <ul>
-            <li><a href="index.html" >Home</a></li>
-            <li><a href="activities.html" class="current" >Activites</a></li>
-            <li><a href="special-events.html" >Special Events</a></li>
-            <li><a href="sponsors.html" >Participating Groups</a></li>
-            <li><a href="contact.html"  >Directions + Contact</a></li>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top py-4">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <!-- <img src="img/leaves-square-icon.png" width="50" height="50" alt=""> -->
+          <h3 class="d-inline align-middle">Salisbury Fall Festival</h3>
+        </a>
+  
+        <button class="button navbar-toggler" type="button"
+          data-toggle="collapse" data-target="#myTogglerNav" >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="myTogglerNav" >
+          <ul class="navbar-nav ml-auto" >
+            <li class="nav-item"><a href="index.html" class="nav-link" >Home</a></li>
+            <li class="nav-item"><a href="activities.html" class="nav-link active" >Activities</a></li>
+            <li class="nav-item"><a href="special-events.html" class="nav-link" >Special Events</a></li>
+            <li class="nav-item"><a href="sponsors.html" class="nav-link" >Participating Groups</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link" >Directions + Contact</a></li>
           </ul>
-      </div> <!-- container -->
-    </nav>
+          </div><!-- navbar-->
+        </div> <!-- collapse -->
+      </div> <!-- container --> 
+    </nav> <!-- nav element -->
+    <div class="header-content">
     <div class="header-content-inner">
-          <h1>Activities</h1>
+          <h1 class="mt-5">Activities</h1>
     </div>
   </header>
   <!-- End Header-->
