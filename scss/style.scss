@@ -1,0 +1,167 @@
+$primary: #ed6e00;
+
+//Reset Styles
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  // margin-top
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2 {
+  font-family: "Amatic SC", cursive;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #000;
+}
+
+// End General Styles
+
+.navbar {
+  opacity: 0.75;
+  background: #000;
+
+  .nav-item {
+    font-size: 1rem;
+    padding-right: 1.4rem;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  a:hover {
+    border-bottom: red 3px solid;
+  }
+
+  .active {
+    border-bottom: red 3px solid;
+  }
+
+  h3 {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 1.3rem;
+  }
+}
+
+#showcase {
+  background: url("../img/autumn-leaves-HERO-sm.jpg") no-repeat center center /
+    cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: auto 0;
+  width: 100%;
+  //min-width: 400px;
+  max-width: 100%;
+  background-color: rgb(28, 28, 28);
+
+  h1 {
+    font-family: "Mountains of Christmas";
+    text-shadow: 0.35rem 0.35rem 8px #000;
+    color: #fff;
+    font-size: 7rem;
+  }
+}
+
+// Jumbotron
+/* .jumbotron {
+  .display-1 {
+    font-family: "Mountains of Christmas";
+    font-size: 7rem;
+    text-shadow: 0.35rem 0.35rem 8px #000;
+  }
+} */
+
+.vertical-center {
+  min-height: 100%; /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Home - Text section
+
+.cornucopia {
+  background: url(../img/cornucopia-silouette-2.png) no-repeat center center /
+    contain;
+  margin: 20px;
+  width: 275px;
+}
+
+.maple-leaf {
+  background: url(../img/leaf-square.png) no-repeat center center / contain;
+  margin: 20px;
+  width: 275px;
+}
+
+@media screen and (max-width: 992px) {
+  #showcase {
+    /*background: url("../img/autumn-leaves-HERO-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto 0;
+    width: 100%;
+    min-width: 400px; */
+    h1 {
+      font-family: "Mountains of Christmas";
+      text-shadow: 0.35rem 0.35rem 8px #000;
+      color: #fff;
+      font-size: 4rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #showcase {
+    background: url("../img/autumn-leaves-HERO-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto 0;
+    width: 100%;
+    min-width: 400px;
+    h1 {
+      font-family: "Mountains of Christmas";
+      text-shadow: 0.35rem 0.35rem 8px #000;
+      color: #fff;
+      font-size: 3rem;
+    }
+  }
+  .vertical-center {
+    min-height: 100%; /* Fallback for browsers do NOT support vh unit */
+    min-height: 50vh; /* These two lines are counted as one :-)       */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+// Home page news section
