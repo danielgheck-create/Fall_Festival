@@ -1,66 +1,81 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
   background-color: #fff;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
-  line-height: 1.6; }
+  line-height: 1.6;
+}
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 ul {
-  list-style: none; }
+  list-style: none;
+}
 
 h1,
 h2 {
   font-family: "Amatic SC", cursive;
-  text-align: center; }
+  text-align: center;
+}
 
 h2 {
-  font-size: 3rem; }
+  font-size: 3rem;
+}
 
 p {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 1.25rem;
   font-weight: 400;
-  color: #000; }
+  color: #000;
+}
 
 .navbar {
   opacity: 0.75;
-  background: #000; }
-  .navbar .nav-item {
-    font-size: 1rem;
-    padding-right: 1.4rem;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    color: #fff; }
-  .navbar a:hover {
-    border-bottom: red 3px solid; }
-  .navbar .active {
-    border-bottom: red 3px solid; }
-  .navbar h3 {
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-weight: 100;
-    font-size: 1.3rem;
-    color: #fff; }
+  background: #000;
+}
+.navbar .nav-item {
+  font-size: 1rem;
+  padding-right: 1.4rem;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+.navbar a:hover {
+  border-bottom: red 3px solid;
+}
+.navbar .active {
+  border-bottom: red 3px solid;
+}
+.navbar h3 {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 1.3rem;
+  color: #fff;
+}
 
 #showcase {
-  background: url("../img/autumn-leaves-HERO-sm.jpg") no-repeat center center/cover;
+  background: url("../img/autumn-leaves-HERO-sm.jpg") no-repeat center
+    center/cover;
   background-repeat: no-repeat;
   background-size: contain;
   margin: auto 0;
   width: 100%;
   max-width: 100%;
-  background-color: #1c1c1c; }
-  #showcase h1 {
-    font-family: "Mountains of Christmas";
-    text-shadow: 0.35rem 0.35rem 8px #000;
-    color: #fff;
-    font-size: 7rem; }
+  background-color: #1c1c1c;
+}
+#showcase h1 {
+  font-family: "Mountains of Christmas";
+  text-shadow: 0.35rem 0.35rem 8px #000;
+  color: #fff;
+  font-size: 7rem;
+}
 
 /* .jumbotron {
   .display-1 {
@@ -76,17 +91,21 @@ p {
   /* These two lines are counted as one :-)       */
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+}
 
 .cornucopia {
-  background: url(../img/cornucopia-silouette-2.png) no-repeat center center/contain;
+  background: url(../img/cornucopia-silouette-2.png) no-repeat center
+    center/contain;
   margin: 20px;
-  width: 275px; }
+  width: 275px;
+}
 
 .maple-leaf {
   background: url(../img/leaf-square.png) no-repeat center center/contain;
   margin: 20px;
-  width: 275px; }
+  width: 275px;
+}
 
 @media screen and (max-width: 992px) {
   #showcase {
@@ -95,12 +114,15 @@ p {
     background-size: contain;
     margin: auto 0;
     width: 100%;
-    min-width: 400px; */ }
-    #showcase h1 {
-      font-family: "Mountains of Christmas";
-      text-shadow: 0.35rem 0.35rem 8px #000;
-      color: #fff;
-      font-size: 4rem; } }
+    min-width: 400px; */
+  }
+  #showcase h1 {
+    font-family: "Mountains of Christmas";
+    text-shadow: 0.35rem 0.35rem 8px #000;
+    color: #fff;
+    font-size: 4rem;
+  }
+}
 
 @media screen and (max-width: 768px) {
   #showcase {
@@ -109,12 +131,14 @@ p {
     background-size: contain;
     margin: auto 0;
     width: 100%;
-    min-width: 400px; }
-    #showcase h1 {
-      font-family: "Mountains of Christmas";
-      text-shadow: 0.35rem 0.35rem 8px #000;
-      color: #fff;
-      font-size: 3rem; }
+    min-width: 400px;
+  }
+  #showcase h1 {
+    font-family: "Mountains of Christmas";
+    text-shadow: 0.35rem 0.35rem 8px #000;
+    color: #fff;
+    font-size: 3rem;
+  }
   .vertical-center {
     min-height: 100%;
     /* Fallback for browsers do NOT support vh unit */
@@ -122,17 +146,35 @@ p {
     /* These two lines are counted as one :-)       */
     display: flex;
     align-items: center;
-    justify-content: center; } }
+    justify-content: center;
+  }
+}
 
 .header-content-inner h1 {
-  margin-top: 100px; }
+  margin-top: 100px;
+}
 
 a {
   color: coral;
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+}
 
 .navbar a {
-  font-size: 1rem; }
+  font-size: 1rem;
+}
 
 #navbar {
-  margin-top: 100px; }
+  margin-top: 100px;
+}
+
+.header-inner {
+  height: 300px;
+}
+
+.header-text {
+  font-size: 1rem;
+}
+
+h2.activites {
+  color: red;
+}
