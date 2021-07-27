@@ -227,8 +227,12 @@ input[class^="btn-"]:hover {
   width: 90%;
 }
 
-.two-column-A-container .image_wapper img {
-  /* display: none;*/
+/* .two-column-A-container .image_wapper img {
+  /* display: none;
+}*/
+
+.reverse {
+  grid-auto-flow: column;
 }
 
 .sponsors-two-columns-grid {
