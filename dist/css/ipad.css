@@ -232,7 +232,7 @@ input[class^="btn-"]:hover {
 }*/
 
 .reverse {
-  grid-auto-flow: column;
+  /* grid-auto-flow: column;*/
 }
 
 .sponsors-two-columns-grid {
