@@ -231,8 +231,12 @@ input[class^="btn-"]:hover {
   /* display: none;
 }*/
 
+.two-column-A-container {
+  flex-direction: column;
+}
+
 .reverse {
-  /* grid-auto-flow: column;*/
+  flex-direction: column-reverse;
 }
 
 .sponsors-two-columns-grid {

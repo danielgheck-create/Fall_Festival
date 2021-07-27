@@ -303,8 +303,13 @@ img {
 }
 
 .two-column-A-container {
-  display: grid;
+  display: flex;
+  align-items: center;
+  /* border: 1px solid red;*/
+  background-color: #f4f4f4;
+  /* display: grid;
   grid-template-columns: repeat(2, 1fr);
+  */
 }
 
 .column-text {
