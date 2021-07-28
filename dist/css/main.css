@@ -307,9 +307,19 @@ img {
   align-items: center;
   /* border: 1px solid red;*/
   background-color: #f4f4f4;
+  box-sizing: border-box;
   /* display: grid;
   grid-template-columns: repeat(2, 1fr);
   */
+}
+
+.two-column-A-container p {
+  padding: 0rem 2rem;
+}
+
+.two-column-A-container a {
+  margin-bottom: 3rem;
+  padding: 0rem 2rem;
 }
 
 .column-text {
